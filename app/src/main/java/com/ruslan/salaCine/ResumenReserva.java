@@ -85,8 +85,9 @@ public class ResumenReserva extends AppCompatActivity {
                         sb.append("Fila: ").append(reserva.getFila())
                                 .append(", Número de asiento: ").append(reserva.getNumeroAsiento())
                                 .append("\n");
+                        tv_listaReservas.setText(sb.toString());
                     }
-                    tv_listaReservas.setText(sb.toString());
+
 
 
 

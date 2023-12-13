@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -32,6 +33,7 @@ public class ReservaAsientoSala extends AppCompatActivity {
     private List<Reserva> listaReservas = new ArrayList<>(); //Lista de reservas
     private Button btnReservarAsientos;
     private Reserva reserva;
+    private List<ImageFilterButton> listaAsientosSeleccionados = new ArrayList<ImageFilterButton>(); //Lista de asientos seleccionados
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -301,12 +303,12 @@ public class ReservaAsientoSala extends AppCompatActivity {
                 //Si el asiento no esta en la lista de asientos ocupados, se cambia el color del asiento al pulsarlo y se pone en verde
                 if (!listaAsientosOcupados.contains(asiento)) {
 
-                    if (isButtonClicked) {
+                    if (listaAsientosSeleccionados.contains(asiento)) {
                         asiento.clearColorFilter();
-                        isButtonClicked = false;
+                        listaAsientosSeleccionados.remove(asiento);
                     } else {
                         asiento.setColorFilter(Color.parseColor("#26D21B"));
-                        isButtonClicked = true;
+                        listaAsientosSeleccionados.add(asiento);
                         String etiqueta = getResources().getResourceEntryName(asiento.getId());
                         String fila = etiqueta.substring(4,6);
                         String numeroAsiento = etiqueta.substring(14,16);
@@ -323,6 +325,7 @@ public class ReservaAsientoSala extends AppCompatActivity {
                             public void onClick(View v) {
                                 Intent cambio = new Intent(ReservaAsientoSala.this, ResumenReserva.class);
                                 cambio.putExtra("reserva", reserva);
+                                //cambio.putExtra("reserva", (Serializable) listaReservas);
                                 cambio.putExtra("sala", "Cinesa Zaratan");
                                 startActivity(cambio);
                             }
@@ -347,6 +350,7 @@ public class ReservaAsientoSala extends AppCompatActivity {
 
         Intent cambio = new Intent(ReservaAsientoSala.this, ResumenReserva.class);
         cambio.putExtra("reserva", reserva);
+        //cambio.putExtra("listaReservas", (ArrayList<Reserva>) listaReservas);
         cambio.putExtra("sala", "Cinesa Zaratan");
         startActivity(cambio);
 
