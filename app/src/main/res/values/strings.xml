@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">CinemaApp</string>
+    <string-array name="ciudades">
+        <item>Barcelona</item>
+        <item>Bilbao</item>
+        <item>Madrid</item>
+        <item>Sevilla</item>
+        <item>Valencia</item>
+        <item>Valladolid</item>
+    </string-array>
+    <string-array name="salas">
+        <item>Cinesa Diagonal</item>
+        <item>Cinesa Zubiarte</item>
+        <item>Cinesa Príncipe Pío</item>
+        <item>Cinesa Plaza de Armas</item>
+        <item>Cinesa Bonaire</item>
+        <item>Cinesa Zaratán</item>
+    </string-array>
+</resources>

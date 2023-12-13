@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SalaCineZaratan">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_napoleon"
+                android:layout_width="166dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Napoleón" />
+
+            <ImageView
+                android:id="@+id/ivNapoleon"
+                android:layout_width="164dp"
+                android:layout_height="256dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/napoleon" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M - 16" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="158'" />
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Viernes" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sábado" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="Domingo" />
+            </com.google.android.material.tabs.TabLayout>
+
+            <ImageButton
+                android:id="@+id/bt_calendar"
+                android:layout_width="74dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                app:srcCompat="@drawable/calendario_24" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Fecha seleccionada" />
+
+            <TextView
+                android:id="@+id/tv_fecha"
+                android:layout_width="139dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="446dp"
+                android:layout_height="64dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="cambiarPantallaReservaAsiento"
+                    android:shadowColor="@color/material_dynamic_neutral20"
+                    android:text="15:45"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/design_default_color_primary" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18:50"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/design_default_color_primary"
+                    app:chipStrokeColor="@color/design_default_color_primary" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20:20"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/design_default_color_primary" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="21:55"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/design_default_color_primary" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <EditText
+                android:id="@+id/editTextText9"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Wonka" />
+
+            <ImageView
+                android:id="@+id/ivWonka"
+                android:layout_width="166dp"
+                android:layout_height="256dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/wonka" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M - 7" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="115'" />
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Viernes" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sábado" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Domingo" />
+            </com.google.android.material.tabs.TabLayout>
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="448dp"
+                android:layout_height="61dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15:45"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/design_default_color_primary" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18:50"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/design_default_color_primary" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20:20"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/design_default_color_primary" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="21:55"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/design_default_color_primary" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <EditText
+                android:id="@+id/editTextText"
+                android:layout_width="194dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Anatomía de una caída" />
+
+            <ImageView
+                android:id="@+id/ivAnatomia"
+                android:layout_width="166dp"
+                android:layout_height="256dp"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/caida" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M - 16" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tuesday" />
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Viernes" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sábado" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Domingo" />
+            </com.google.android.material.tabs.TabLayout>
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="448dp"
+                android:layout_height="61dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="16:30"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/design_default_color_primary" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="19:15"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/design_default_color_primary" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="22:00"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/design_default_color_primary" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <EditText
+                android:id="@+id/editTextText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Los asesinos de la Luna" />
+
+            <ImageView
+                android:id="@+id/ivAsesinos"
+                android:layout_width="166dp"
+                android:layout_height="256dp"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/asesinos" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M - 18" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="206'" />
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Viernes" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sábado" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Domingo" />
+            </com.google.android.material.tabs.TabLayout>
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="421dp"
+                android:layout_height="63dp"
+                android:layout_marginLeft="10dp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="19:30"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/design_default_color_primary" />
+            </com.google.android.material.chip.ChipGroup>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

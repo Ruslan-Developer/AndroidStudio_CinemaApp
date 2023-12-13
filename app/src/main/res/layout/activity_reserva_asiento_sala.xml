@@ -1,0 +1,1484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReservaAsientoSala">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="377dp"
+        android:layout_height="320dp"
+        app:columnCount="12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
+        app:rowCount="12">
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="29dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="1"
+            android:textAlignment="center"
+            app:layout_column="11"
+            app:layout_row="10" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="29dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="2"
+            android:textAlignment="center"
+            app:layout_column="10"
+            app:layout_row="10" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="29dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="3"
+            android:textAlignment="center"
+            app:layout_column="9"
+            app:layout_row="10" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="29dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="4"
+            android:textAlignment="center"
+            app:layout_column="8"
+            app:layout_row="10" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="29dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="5"
+            android:textAlignment="center"
+            app:layout_column="7"
+            app:layout_row="10" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="29dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="6"
+            android:textAlignment="center"
+            app:layout_column="6"
+            app:layout_row="10" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="29dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="7"
+            android:textAlignment="center"
+            app:layout_column="5"
+            app:layout_row="10" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="29dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="8"
+            android:textAlignment="center"
+            app:layout_column="4"
+            app:layout_row="10" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="29dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="9"
+            android:textAlignment="center"
+            app:layout_column="3"
+            app:layout_row="10" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="29dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="10"
+            android:textAlignment="center"
+            app:layout_column="2"
+            app:layout_row="10" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila02_asiento07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="5"
+            app:layout_row="1"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila02_asiento06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="6"
+            app:layout_row="1"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila02_asiento05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="7"
+            app:layout_row="1"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila02_asiento04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="8"
+            app:layout_row="1"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila02_asiento03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="9"
+            app:layout_row="1"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila02_asiento02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="10"
+            app:layout_row="1"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila01_asiento08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="4"
+            app:layout_row="0"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila05_asiento09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="3"
+            app:layout_row="4"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila05_asiento08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="4"
+            app:layout_row="4"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila05_asiento07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="5"
+            app:layout_row="4"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila05_asiento06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="6"
+            app:layout_row="4"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila05_asiento05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="7"
+            app:layout_row="4"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila05_asiento04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="8"
+            app:layout_row="4"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila05_asiento03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="9"
+            app:layout_row="4"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila05_asiento02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="10"
+            app:layout_row="4"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila05_asiento01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="11"
+            app:layout_row="4"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila06_asiento01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="11"
+            app:layout_row="5"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila06_asiento02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="10"
+            app:layout_row="5"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila06_asiento03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="9"
+            app:layout_row="5"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila06_asiento04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="8"
+            app:layout_row="5"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila06_asiento05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="7"
+            app:layout_row="5"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila06_asiento06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="6"
+            app:layout_row="5"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila06_asiento07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="5"
+            app:layout_row="5"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila06_asiento08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="4"
+            app:layout_row="5"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila06_asiento09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="3"
+            app:layout_row="5"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila06_asiento10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="2"
+            app:layout_row="5"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila07_asiento01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="11"
+            app:layout_row="6"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila07_asiento03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="9"
+            app:layout_row="6"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila07_asiento04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="8"
+            app:layout_row="6"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila07_asiento05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="7"
+            app:layout_row="6"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila07_asiento06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="6"
+            app:layout_row="6"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila07_asiento07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="5"
+            app:layout_row="6"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila07_asiento08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="4"
+            app:layout_row="6"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila07_asiento09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="3"
+            app:layout_row="6"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila07_asiento10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="2"
+            app:layout_row="6"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila07_asiento02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="10"
+            app:layout_row="6"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila08_asiento01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="11"
+            app:layout_row="7"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila09_asiento01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="11"
+            app:layout_row="8"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila10_asiento01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="11"
+            app:layout_row="9"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila10_asiento02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="10"
+            app:layout_row="9"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila10_asiento03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="9"
+            app:layout_row="9"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila10_asiento04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="8"
+            app:layout_row="9"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila10_asiento05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="7"
+            app:layout_row="9"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila10_asiento06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="6"
+            app:layout_row="9"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila10_asiento07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="5"
+            app:layout_row="9"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila10_asiento08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="4"
+            app:layout_row="9"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila10_asiento09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="3"
+            app:layout_row="9"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila10_asiento10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="2"
+            app:layout_row="9"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila09_asiento02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="10"
+            app:layout_row="8"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila09_asiento03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="9"
+            app:layout_row="8"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila09_asiento04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="8"
+            app:layout_row="8"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila09_asiento05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="7"
+            app:layout_row="8"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila09_asiento06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="6"
+            app:layout_row="8"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila09_asiento07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="5"
+            app:layout_row="8"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila09_asiento08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="4"
+            app:layout_row="8"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila09_asiento09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="3"
+            app:layout_row="8"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila09_asiento10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="2"
+            app:layout_row="8"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila08_asiento02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="10"
+            app:layout_row="7"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila08_asiento03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="9"
+            app:layout_row="7"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila08_asiento04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="8"
+            app:layout_row="7"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila08_asiento05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="7"
+            app:layout_row="7"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila08_asiento06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="6"
+            app:layout_row="7"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila08_asiento07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="5"
+            app:layout_row="7"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila08_asiento08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="4"
+            app:layout_row="7"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila08_asiento09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="3"
+            app:layout_row="7"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila08_asiento10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="2"
+            app:layout_row="7"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila02_asiento09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="3"
+            app:layout_row="1"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila03_asiento09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="3"
+            app:layout_row="2"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila03_asiento08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="4"
+            app:layout_row="2"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila03_asiento07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="5"
+            app:layout_row="2"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila03_asiento06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="6"
+            app:layout_row="2"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila03_asiento05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="7"
+            app:layout_row="2"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila03_asiento10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="2"
+            app:layout_row="2"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila04_asiento10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="2"
+            app:layout_row="3"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila04_asiento09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="3"
+            app:layout_row="3"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila04_asiento08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="4"
+            app:layout_row="3"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila04_asiento07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="5"
+            app:layout_row="3"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila04_asiento06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="6"
+            app:layout_row="3"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila04_asiento05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="7"
+            app:layout_row="3"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila04_asiento04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="8"
+            app:layout_row="3"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila04_asiento03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="9"
+            app:layout_row="3"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila04_asiento02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="10"
+            app:layout_row="3"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila04_asiento01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="11"
+            app:layout_row="3"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila03_asiento01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="11"
+            app:layout_row="2"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila03_asiento04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="8"
+            app:layout_row="2"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila03_asiento03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="9"
+            app:layout_row="2"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila03_asiento02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="10"
+            app:layout_row="2"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila02_asiento08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="4"
+            app:layout_row="1"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila01_asiento07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="5"
+            app:layout_row="0"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila01_asiento06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="6"
+            app:layout_row="0"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila01_asiento05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="7"
+            app:layout_row="0"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila01_asiento04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="8"
+            app:layout_row="0"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila01_asiento03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="9"
+            app:layout_row="0"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="29dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="1"
+            android:textAlignment="center"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="29dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="2"
+            android:textAlignment="center"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="29dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="3"
+            android:textAlignment="center"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="29dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="4"
+            android:textAlignment="center"
+            app:layout_column="1"
+            app:layout_row="3" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="29dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="5"
+            android:textAlignment="center"
+            app:layout_column="1"
+            app:layout_row="4" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="29dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="6"
+            android:textAlignment="center"
+            app:layout_column="1"
+            app:layout_row="5" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="29dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="7"
+            android:textAlignment="center"
+            app:layout_column="1"
+            app:layout_row="6" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="29dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="8"
+            android:textAlignment="center"
+            app:layout_column="1"
+            app:layout_row="7" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="29dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="9"
+            android:textAlignment="center"
+            app:layout_column="1"
+            app:layout_row="8" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="29dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="10"
+            android:textAlignment="center"
+            app:layout_column="1"
+            app:layout_row="9" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/fila05_asiento10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:rotation="180"
+            app:contrast="1.0"
+            app:layout_column="2"
+            app:layout_row="4"
+            app:saturation="2.0"
+            app:srcCompat="@drawable/asientosmall"
+            app:warmth="1.2" />
+
+        <!-- Repite el botón para cada asiento que necesites, cambiando el texto para cada uno -->
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="419dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_siguiente_reserva"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/pantalla" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="9dp"
+        android:text="Escoge las localidades"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_siguiente_reserva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="84dp"
+        android:onClick="finalizarSeleccion"
+        android:text="Finalizar seleccion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
