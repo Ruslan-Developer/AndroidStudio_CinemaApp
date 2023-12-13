@@ -65,17 +65,21 @@
         android:id="@+id/tvNumAsiento"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginTop="402dp"
         android:layout_marginEnd="74dp"
-        android:layout_marginBottom="292dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvListaReservas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tvFila"
-        app:layout_constraintTop_toBottomOf="@+id/tvFecha" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvListaReservas"
         android:layout_width="259dp"
-        android:layout_height="63dp"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="465dp" />
+        android:layout_height="0dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="203dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNumAsiento" />
 </androidx.constraintlayout.widget.ConstraintLayout>

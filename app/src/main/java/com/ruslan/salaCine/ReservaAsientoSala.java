@@ -32,6 +32,7 @@ public class ReservaAsientoSala extends AppCompatActivity {
     private List<Reserva> listaReservas = new ArrayList<>(); //Lista de reservas
     private Button btnReservarAsientos;
     private Reserva reserva;
+    private List<ImageFilterButton> listaAsientosSeleccionados = new ArrayList<ImageFilterButton>(); //Lista de asientos seleccionados
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -301,15 +302,27 @@ public class ReservaAsientoSala extends AppCompatActivity {
                 //Si el asiento no esta en la lista de asientos ocupados, se cambia el color del asiento al pulsarlo y se pone en verde
                 if (!listaAsientosOcupados.contains(asiento)) {
 
-                    if (isButtonClicked) {
+                    if (listaAsientosSeleccionados.contains(asiento)) {
                         asiento.clearColorFilter();
-                        isButtonClicked = false;
+                        listaAsientosSeleccionados.remove(asiento);
                     } else {
+                        //Marca en verde el asiento seleccionado
                         asiento.setColorFilter(Color.parseColor("#26D21B"));
-                        isButtonClicked = true;
+                        // Agregamos el asiento a la lista de asientos seleccionados
+                        listaAsientosSeleccionados.add(asiento);
+                        // Generamos una nueva lista de IDs de asientos reservados
+                        ArrayList<String> asientosSeleccionadosIds= new ArrayList<String>();
+                        // Recorremos la lista de asientos seleccionados para obtener los IDs de los asientos
+                        for (ImageFilterButton asientoSeleccionado : listaAsientosSeleccionados) {
+                            // Obtenemos el ID del asiento seleccionado y lo agregamos a una nueva lista de IDs de asientos reservados
+                            asientosSeleccionadosIds.add(getResources().getResourceEntryName(asientoSeleccionado.getId()));
+                        }
+                        /*
                         String etiqueta = getResources().getResourceEntryName(asiento.getId());
                         String fila = etiqueta.substring(4,6);
                         String numeroAsiento = etiqueta.substring(14,16);
+
+
 
                         // Creamos una nueva reserva y la agregamos a la lista de reservas
                         //Reserva reserva = new Reserva();
@@ -318,12 +331,16 @@ public class ReservaAsientoSala extends AppCompatActivity {
                         reserva.setNumeroAsiento(numeroAsiento);
                         listaReservas.add(reserva);
 
+                         */
+
                         btnReservarAsientos.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
+
                                 Intent cambio = new Intent(ReservaAsientoSala.this, ResumenReserva.class);
                                 cambio.putExtra("reserva", reserva);
                                 cambio.putExtra("sala", "Cinesa Zaratan");
+                                cambio.putStringArrayListExtra("asientosSeleccionados", asientosSeleccionadosIds);
                                 startActivity(cambio);
                             }
 

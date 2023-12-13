@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ResumenReserva extends AppCompatActivity {
@@ -20,6 +21,8 @@ public class ResumenReserva extends AppCompatActivity {
         private TextView tv_numeroAsiento;
         private TextView tv_listaReservas;
         private List<Reserva> listaReservas;
+        private String fila;
+        private String numeroAsiento;
 
 
 
@@ -78,6 +81,7 @@ public class ResumenReserva extends AppCompatActivity {
                 if (numeroAsiento != null) {
                     tv_numeroAsiento.setText(numeroAsiento);
                 }
+                /*
 
                 if(listaReservas != null) {
                     StringBuilder sb = new StringBuilder();
@@ -90,6 +94,21 @@ public class ResumenReserva extends AppCompatActivity {
 
 
 
+                }
+
+                 */
+
+                ArrayList<String> asientosSeleccionadosIds = intent.getStringArrayListExtra("asientosSeleccionados");
+                if (asientosSeleccionadosIds != null) {
+                    StringBuilder sb = new StringBuilder();
+                    for (String asientoId : asientosSeleccionadosIds) {
+                         fila = asientoId.substring(4, 6);
+                         numeroAsiento = asientoId.substring(14,16);
+                        sb.append("Fila: ").append(fila)
+                                .append(", Número de asiento: ").append(numeroAsiento)
+                                .append("\n");
+                    }
+                    tv_listaReservas.setText(sb.toString());
                 }
             }
 
