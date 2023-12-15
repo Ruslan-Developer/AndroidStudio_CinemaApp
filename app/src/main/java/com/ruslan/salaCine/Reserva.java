@@ -16,12 +16,13 @@ public class Reserva implements Serializable {
 
     private String fila;
     private String numeroAsiento;
+    private double precioEntradas;
 
     public Reserva(){
 
     }
 
-    public Reserva(String nombre, String apellido, String email, String telefono, String pelicula, String sala, String fecha, String hora, String asientos, String fila, String numeroAsiento) {
+    public Reserva(String nombre, String apellido, String email, String telefono, String pelicula, String sala, String fecha, String hora, String asientos, String fila, String numeroAsiento, double precioEntradas) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.email = email;
@@ -33,22 +34,13 @@ public class Reserva implements Serializable {
         this.asientos = asientos;
         this.fila = fila;
         this.numeroAsiento = numeroAsiento;
-    }
-    /*
-
-    public Reserva() {
-        this.nombre = "";
-        this.apellido = "";
-        this.email = "";
-        this.telefono = "";
-        this.pelicula = "";
-        this.sala = "";
-        this.fecha = "";
-        this.hora = "";
-        this.asientos = "";
+        this.precioEntradas = precioEntradas;
     }
 
-     */
+    public double getPrecioEntradas() {
+        return precioEntradas;
+    }
+
 
 
     public String getNombre() {
@@ -136,6 +128,8 @@ public class Reserva implements Serializable {
     public void setNumeroAsiento(String numeroAsiento) {
         this.numeroAsiento = numeroAsiento;
     }
-
+    public void setPrecioEntradas(double precioEntradas) {
+        this.precioEntradas = precioEntradas;
+    }
 
 }

@@ -11,7 +11,9 @@ import android.view.View;
 import android.widget.Button;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
 public class ReservaAsientoSala extends AppCompatActivity {
@@ -33,6 +35,8 @@ public class ReservaAsientoSala extends AppCompatActivity {
     private Button btnReservarAsientos;
     private Reserva reserva;
     private List<ImageFilterButton> listaAsientosSeleccionados = new ArrayList<ImageFilterButton>(); //Lista de asientos seleccionados
+    private Map<String, Double> preciosButacas = new HashMap<String, Double>();
+    private double precioTotal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -286,6 +290,16 @@ public class ReservaAsientoSala extends AppCompatActivity {
                 asientoOcupado.setColorFilter(Color.RED);
             }
         }
+        /**
+         * Recorremos la lista de asientos para obtener el ID de cada asiento
+         * Se obtiene el ID del asiento y se guarda en una variable de tipo String
+         * Se guarda el ID del asiento y el precio en un Map para poder obtener el precio del asiento (clave) a partir del ID (valor) precio que fijamos en 8.40
+         */
+
+        for (ImageFilterButton butaca : listaAsientos) {
+            String asientoId = getResources().getResourceEntryName(butaca.getId());
+            preciosButacas.put(asientoId, 8.40);
+        }
 
 
         /**
@@ -305,33 +319,29 @@ public class ReservaAsientoSala extends AppCompatActivity {
                     if (listaAsientosSeleccionados.contains(asiento)) {
                         asiento.clearColorFilter();
                         listaAsientosSeleccionados.remove(asiento);
+                        // Si el asiento ya estaba seleccionado, se resta el precio del asiento al precio total
+                        String asientoId = getResources().getResourceEntryName(asiento.getId());
+                        precioTotal -= preciosButacas.get(asientoId);
+                        reserva.setPrecioEntradas(precioTotal);
+
                     } else {
                         //Marca en verde el asiento seleccionado
                         asiento.setColorFilter(Color.parseColor("#26D21B"));
                         // Agregamos el asiento a la lista de asientos seleccionados
                         listaAsientosSeleccionados.add(asiento);
+                        // Si el asiento no estaba seleccionado, se suma el precio del asiento al precio total
+                        String asientoId = getResources().getResourceEntryName(asiento.getId());
+                        precioTotal += preciosButacas.get(asientoId);
+                        reserva.setPrecioEntradas(precioTotal);
                         // Generamos una nueva lista de IDs de asientos reservados
                         ArrayList<String> asientosSeleccionadosIds= new ArrayList<String>();
                         // Recorremos la lista de asientos seleccionados para obtener los IDs de los asientos
                         for (ImageFilterButton asientoSeleccionado : listaAsientosSeleccionados) {
                             // Obtenemos el ID del asiento seleccionado y lo agregamos a una nueva lista de IDs de asientos reservados
+
                             asientosSeleccionadosIds.add(getResources().getResourceEntryName(asientoSeleccionado.getId()));
                         }
-                        /*
-                        String etiqueta = getResources().getResourceEntryName(asiento.getId());
-                        String fila = etiqueta.substring(4,6);
-                        String numeroAsiento = etiqueta.substring(14,16);
 
-
-
-                        // Creamos una nueva reserva y la agregamos a la lista de reservas
-                        //Reserva reserva = new Reserva();
-
-                        reserva.setFila(fila);
-                        reserva.setNumeroAsiento(numeroAsiento);
-                        listaReservas.add(reserva);
-
-                         */
 
                         btnReservarAsientos.setOnClickListener(new View.OnClickListener() {
                             @Override

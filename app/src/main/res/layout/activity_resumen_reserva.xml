@@ -4,82 +4,193 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ticketcine"
     tools:context=".ResumenReserva">
 
     <TextView
         android:id="@+id/tv_tituloPelicula"
-        android:layout_width="146dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="95dp"
-        android:layout_marginBottom="267dp"
-        app:layout_constraintBottom_toTopOf="@+id/tvFila"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="128dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="39dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <TextView
         android:id="@+id/tvSala"
-        android:layout_width="129dp"
-        android:layout_height="51dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="511dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/tv_tituloPelicula"
-        app:layout_constraintTop_toBottomOf="@+id/tv_tituloPelicula" />
+        android:layout_width="142dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="102dp"
+        android:textColor="@color/white"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView8" />
 
     <TextView
         android:id="@+id/tvFecha"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="254dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="110dp"
-        app:layout_constraintBottom_toTopOf="@+id/tvNumAsiento"
-        app:layout_constraintEnd_toEndOf="@+id/tvHora"
-        app:layout_constraintStart_toStartOf="@+id/tvSala"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="122dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="106dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="@+id/textView10" />
 
     <TextView
         android:id="@+id/tvHora"
-        android:layout_width="139dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="115dp"
-        android:layout_marginBottom="368dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="127dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
         app:layout_constraintTop_toBottomOf="@+id/tvFecha" />
 
     <TextView
-        android:id="@+id/tvFila"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="115dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginBottom="294dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/tvNumAsiento"
+        android:id="@+id/textView7"
+        android:layout_width="113dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="7dp"
+        android:text="Titulo pelicula : "
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_tituloPelicula"
+        app:layout_constraintEnd_toStartOf="@+id/tv_tituloPelicula"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="68dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="38dp"
+        android:paddingTop="5dp"
+        android:text="Sala cine: "
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_tituloPelicula"
+        app:layout_constraintEnd_toStartOf="@+id/tvSala"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="93dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="17dp"
+        android:text="Fecha: "
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView13"
+        app:layout_constraintEnd_toStartOf="@+id/tvFecha"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_tituloPelicula" />
 
     <TextView
-        android:id="@+id/tvNumAsiento"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="402dp"
-        android:layout_marginEnd="74dp"
-        android:layout_marginBottom="26dp"
-        app:layout_constraintBottom_toTopOf="@+id/tvListaReservas"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tvFila"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/textView13"
+        android:layout_width="93dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="22dp"
+        android:text="Hora:"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView14"
+        app:layout_constraintEnd_toStartOf="@+id/tvHora"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <TextView
-        android:id="@+id/tvListaReservas"
-        android:layout_width="259dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="52dp"
-        android:layout_marginBottom="203dp"
+        android:id="@+id/textView14"
+        android:layout_width="296dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/material_dynamic_neutral_variant10"
+        android:paddingTop="10dp"
+        android:text="Butacas seleccionadas: "
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etmListaReservaButacas"
+        app:layout_constraintStart_toStartOf="@+id/textView13" />
+
+    <EditText
+        android:id="@+id/etmListaReservaButacas"
+        android:layout_width="294dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="101dp"
+        android:background="@color/material_dynamic_neutral_variant10"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textColor="@color/white"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvNumAsiento" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="111dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="9dp"
+        android:text="Precio unidad: "
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etmListaReservaButacas" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="113dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="51dp"
+        android:text="Precio Total:"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPrecioTotal"
+        android:layout_width="88dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginBottom="45dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView31"
+        app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="67dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="117dp"
+        android:text="8.40 €"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView30"
+        app:layout_constraintTop_toBottomOf="@+id/etmListaReservaButacas" />
 </androidx.constraintlayout.widget.ConstraintLayout>

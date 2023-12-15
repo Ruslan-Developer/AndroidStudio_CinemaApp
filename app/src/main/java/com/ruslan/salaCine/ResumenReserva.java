@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -19,10 +20,12 @@ public class ResumenReserva extends AppCompatActivity {
         private TextView tv_hora;
         private TextView tv_fila;
         private TextView tv_numeroAsiento;
-        private TextView tv_listaReservas;
+        private EditText et_lista_butacas;
         private List<Reserva> listaReservas;
         private String fila;
         private String numeroAsiento;
+        private int cont = 0;
+        private TextView tv_precioEntradas;
 
 
 
@@ -35,9 +38,9 @@ public class ResumenReserva extends AppCompatActivity {
         tv_sala = findViewById(R.id.tvSala);
         tv_fecha = findViewById(R.id.tvFecha);
         tv_hora = findViewById(R.id.tvHora);
-        tv_fila = findViewById(R.id.tvFila);
-        tv_numeroAsiento = findViewById(R.id.tvNumAsiento);
-        tv_listaReservas = findViewById(R.id.tvListaReservas);
+        tv_precioEntradas = findViewById(R.id.tvPrecioTotal);
+        et_lista_butacas = findViewById(R.id.etmListaReservaButacas);
+
 
 
         // Obtén la reserva del Intent
@@ -57,6 +60,9 @@ public class ResumenReserva extends AppCompatActivity {
                 String hora = reserva.getHora();
                 String fila = reserva.getFila();
                 String numeroAsiento = reserva.getNumeroAsiento();
+                double precioEntradas = reserva.getPrecioEntradas();
+                // Formatear el precio de las entradas a dos decimales
+                String precioFormateado = String.format("%.2f", precioEntradas);
 
                 if (pelicula != null) {
                     tv_titulo_pelicula.setText(pelicula);
@@ -74,42 +80,23 @@ public class ResumenReserva extends AppCompatActivity {
                     tv_hora.setText(hora);
                 }
 
-                if (fila != null) {
-                    tv_fila.setText(fila);
-                }
-
-                if (numeroAsiento != null) {
-                    tv_numeroAsiento.setText(numeroAsiento);
-                }
-                /*
-
-                if(listaReservas != null) {
-                    StringBuilder sb = new StringBuilder();
-                    for (Reserva reserva : listaReservas) {
-                        sb.append("Fila: ").append(reserva.getFila())
-                                .append(", Número de asiento: ").append(reserva.getNumeroAsiento())
-                                .append("\n");
-                        tv_listaReservas.setText(sb.toString());
-                    }
-
-
-
-
-                }
-
-                 */
 
                 ArrayList<String> asientosSeleccionadosIds = intent.getStringArrayListExtra("asientosSeleccionados");
                 if (asientosSeleccionadosIds != null) {
                     StringBuilder sb = new StringBuilder();
                     for (String asientoId : asientosSeleccionadosIds) {
+                         cont ++;
                          fila = asientoId.substring(4, 6);
                          numeroAsiento = asientoId.substring(14,16);
                         sb.append("Fila: ").append(fila)
                                 .append(", Número de asiento: ").append(numeroAsiento)
                                 .append("\n");
                     }
-                    tv_listaReservas.setText(sb.toString());
+                    et_lista_butacas.setText(sb.toString());
+                }
+
+                if (precioEntradas != 0) {
+                    tv_precioEntradas.setText(String.valueOf(precioFormateado)+" €");
                 }
             }
 
