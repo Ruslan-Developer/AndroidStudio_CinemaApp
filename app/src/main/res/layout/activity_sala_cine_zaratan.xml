@@ -120,6 +120,7 @@
                     android:id="@+id/chip32"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="cambiarPantallaReservaAsiento"
                     android:text="18:50"
                     android:textColor="@color/white"
                     app:chipBackgroundColor="@color/design_default_color_primary"
@@ -129,6 +130,7 @@
                     android:id="@+id/chip33"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="cambiarPantallaReservaAsiento"
                     android:text="20:20"
                     android:textColor="@color/white"
                     app:chipBackgroundColor="@color/design_default_color_primary" />
@@ -137,6 +139,7 @@
                     android:id="@+id/chip34"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="cambiarPantallaReservaAsiento"
                     android:text="21:55"
                     android:textColor="@color/white"
                     app:chipBackgroundColor="@color/design_default_color_primary" />

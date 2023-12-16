@@ -24,7 +24,7 @@ import java.util.Map;
 
 public class SalaCineZaratan extends AppCompatActivity {
 
-    private Chip chipHora01;
+    private Chip chipHora01, chipHora02, chipHora03, chipHora04;
     private ImageButton btCalendario;
     private ImageView iv_napolean, iv_wonka, iv_anatomia, iv_asesinos;
     private TabLayout tabLayout;
@@ -40,6 +40,9 @@ public class SalaCineZaratan extends AppCompatActivity {
         setContentView(R.layout.activity_sala_cine_zaratan);
 
         chipHora01 = findViewById(R.id.chip31);
+        chipHora02 = findViewById(R.id.chip32);
+        chipHora03 = findViewById(R.id.chip33);
+        chipHora04 = findViewById(R.id.chip34);
         btCalendario = findViewById(R.id.bt_calendar);
         tabLayout = findViewById(R.id.tab_layout_1);
         tvFecha = findViewById(R.id.tv_fecha);
@@ -212,8 +215,14 @@ public class SalaCineZaratan extends AppCompatActivity {
         reserva.setFecha(fecha);
 
         // Guardamos la hora seleccionada en el objeto reserva
-        String hora = chipHora01.getText().toString();
-        reserva.setHora(hora);
+        String hora01 = chipHora01.getText().toString();
+        String hora02 = chipHora02.getText().toString();
+        String hora03 = chipHora03.getText().toString();
+        String hora04 = chipHora04.getText().toString();
+        reserva.setHora(hora01);
+        reserva.setHora(hora02);
+        reserva.setHora(hora03);
+        reserva.setHora(hora04);
 
         // Cambiamos a la siguiente pantalla
         Intent cambio = new Intent(SalaCineZaratan.this, ReservaAsientoSala.class);
