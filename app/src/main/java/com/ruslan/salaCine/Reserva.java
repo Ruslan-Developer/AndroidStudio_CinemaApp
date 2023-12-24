@@ -3,6 +3,12 @@ package com.ruslan.salaCine;
 
 import java.io.Serializable;
 
+/**
+ * Clase que representa una reserva de butacas
+ * Contiene los datos de la reserva
+ * Implementa la interfaz Serializable para poder pasar objetos de este tipo entre actividades
+ * con un Intent explícito (ver ResumenReserva.java)
+ */
 public class Reserva implements Serializable {
     private String nombre;
     private String apellido;
@@ -13,15 +19,15 @@ public class Reserva implements Serializable {
     private String fecha;
     private String hora;
     private String asientos;
-
     private String fila;
     private String numeroAsiento;
     private double precioEntradas;
 
+    // Constructor vacío
     public Reserva(){
 
     }
-
+    // Constructor con parámetros
     public Reserva(String nombre, String apellido, String email, String telefono, String pelicula, String sala, String fecha, String hora, String asientos, String fila, String numeroAsiento, double precioEntradas) {
         this.nombre = nombre;
         this.apellido = apellido;
@@ -36,12 +42,10 @@ public class Reserva implements Serializable {
         this.numeroAsiento = numeroAsiento;
         this.precioEntradas = precioEntradas;
     }
-
+    // Getters y setters
     public double getPrecioEntradas() {
         return precioEntradas;
     }
-
-
 
     public String getNombre() {
         return nombre;

@@ -30,21 +30,34 @@ public class RegistroUsuario extends AppCompatActivity {
 
     }
 
+    /**
+     * Método que registra los datos del usuario en la base de datos
+     * @param view
+     * @return void
+     *
+     */
     public void registrarDatos(View view) {
+
         String nombre = etNombre.getText().toString();
         String apellido = etApellido.getText().toString();
         String correo = etCorreo.getText().toString();
         String password = etContrasena.getText().toString();
         String confirmarPassword = etConfirmarContrasena.getText().toString();
 
-        if ( nombre.equals("") || apellido.equals("") || correo.equals("") || password.equals("") || etConfirmarContrasena.getText().toString().equals("")) {
+        // Comprobamos que los campos no estén vacíos
+        if ( nombre.equals("")
+                || apellido.equals("")
+                || correo.equals("")
+                || password.equals("")
+                || etConfirmarContrasena.getText().toString().equals("")) {
             Toast.makeText(this, "Por favor, ingrese todos los campos", Toast.LENGTH_SHORT).show();
         } else {
 
-
+            // Comprobamos que el usuario no exista en la base de datos
             if(db.checkUsuario(correo, password)) {
                 Toast.makeText(this, "El usuario ya existe", Toast.LENGTH_SHORT).show();
             } else {
+                // Comprobamos que las contraseñas coincidan
                 if (password.equals(confirmarPassword)) {
                     Boolean insertar = db.agregarUsuario(correo, password);
                     if (insertar) {

@@ -369,6 +369,10 @@ public class ReservaAsientoSala extends AppCompatActivity {
 
     }
 
+
+    /*  Código de versiones antiguas que no se esta usando, pero nos sirve de referencia para seguir las evoluciones */
+
+
     //Metodo para cambiar a la siguiente pantalla
     public void finalizarSeleccion(View view){
 
@@ -415,6 +419,7 @@ public class ReservaAsientoSala extends AppCompatActivity {
         }
 
     }
+
 
 
 }

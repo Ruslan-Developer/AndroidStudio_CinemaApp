@@ -72,11 +72,18 @@ public class SeleccionCine extends AppCompatActivity {
             Intent cambio = new Intent(SeleccionCine.this, SalaCineZaratan.class);
             cambio.putExtra("reserva", reserva);
             startActivity(cambio);
-        }else if(textViewSalas.getText().toString().equals("Sala 2")) {
+        }else if(textViewSalas.getText().toString().equals("Cinesa Diagonal")) {
             //Intent cambio = new Intent(this, SalaCine.class);
-        }else if(textViewSalas.getText().toString().equals("Sala 3")) {
+        }else if(textViewSalas.getText().toString().equals("Cinesa Zubiarte")) {
             //Intent cambio = new Intent(this, SalaCine.class);
-        }else{
+        }else if(textViewSalas.getText().toString().equals("Cinesa Principe Pio")) {
+            //Intent cambio = new Intent(this, SalaCine.class);
+        }else if(textViewSalas.getText().toString().equals("Cinesa Plaza de Armas")) {
+            //Intent cambio = new Intent(this, SalaCine.class);
+        }else if(textViewSalas.getText().toString().equals("Cinesa Bonaire")) {
+            //Intent cambio = new Intent(this, SalaCine.class);
+        }
+        else{
            Toast errorSala =  Toast.makeText(this, "Debe seleccionar una sala existente", Toast.LENGTH_SHORT);
            errorSala.show();
         }
