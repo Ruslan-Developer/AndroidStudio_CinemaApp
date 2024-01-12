@@ -48,7 +48,7 @@ public class SeleccionCine extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 //Cargar las salas de cine en el ListView
-                String[] salas = getResources().getStringArray(R.array.salas);
+                String[] salas = getResources().getStringArray(R.array.salas); // Array de salas de cine de la ciudad seleccionada en el ListView anterior (listViewCines)
 
                 //Mostrar las salas de cine que el usuario ha seleccionado en el TextView
                 textViewSalas.setText(salas[position]);

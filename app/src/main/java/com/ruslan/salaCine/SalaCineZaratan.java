@@ -115,7 +115,7 @@ public class SalaCineZaratan extends AppCompatActivity {
 
         /**
          * Método que muestra el calendario con la fecha del viernes, sabado o domingo
-         * Al seleccionar un día de la semana se muestra el calendario con la fecha del viernes, sabado o domingo
+         * Al seleccionar un día de la semana viernes, sabado o domingo se muestra el calendario
          * Solo se puede seleccionar un día de la semana a la vez (Viernes, Sábado o Domingo)
          *
          */
@@ -132,7 +132,6 @@ public class SalaCineZaratan extends AppCompatActivity {
             public void onTabUnselected(TabLayout.Tab tab) {
 
 
-
             }
 
             @Override
@@ -142,7 +141,6 @@ public class SalaCineZaratan extends AppCompatActivity {
             }
 
         });
-
 
 
     }
@@ -183,7 +181,7 @@ public class SalaCineZaratan extends AppCompatActivity {
                 Calendar calendar = Calendar.getInstance();
                 calendar.set(year, monthOfYear, dayOfMonth);
 
-                int diaSemana = -1;
+                int diaSemana = -1; // -1 indica que no se ha seleccionado ningun dia de la semana
                 if(diaSeleccionado.equals("Viernes")) {
                     diaSemana = Calendar.FRIDAY;
                 } else if(diaSeleccionado.equals("Sábado")) {
@@ -196,10 +194,12 @@ public class SalaCineZaratan extends AppCompatActivity {
                     while(calendar.get(Calendar.DAY_OF_WEEK) != diaSemana) {
                         calendar.add(Calendar.DAY_OF_MONTH, 1);
                     }
+                    // Actualizamos el calendario con la fecha del viernes, sabado o domingo mas cercano al seleccionado por el usuario en el TabLayout
                     view.updateDate(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH));
                 }
             }
         };
+        // Mostramos el calendario
         datePickerDialog.show();
     }
 

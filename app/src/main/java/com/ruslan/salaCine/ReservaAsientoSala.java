@@ -383,6 +383,7 @@ public class ReservaAsientoSala extends AppCompatActivity {
 
 
     }
+    /* Esta parte del codigo no se usa al no ser del todo funcional */
 
     public void asignarAsientoReserva(){
         View.OnClickListener onClickListener = new View.OnClickListener() {
